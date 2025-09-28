@@ -1,10 +1,8 @@
-# cmake yes
-# dlib yes
-# face-recognition yes
-# numpy yes
-# opencv-python yes
-# wheel yes
-
+"""
+Ejemplo de reconocimiento facial usando la librería face_recognition y OpenCV.
+Este script carga dos imágenes, una de referencia y otra de prueba, y verifica si la cara
+en la imagen de prueba coincide con la cara en la imagen de referencia.
+"""
 
 import cv2
 import face_recognition as fr
@@ -64,7 +62,7 @@ cv2.putText(imagen_prueba,
 # Redimensionar a la mitad (50%)
 # referencia_resized = cv2.resize(imagen_referencia, (0, 0), fx=0.5, fy=0.5)
 # prueba_resized = cv2.resize(imagen_prueba, (0, 0), fx=0.2, fy=0.2)
-# O a un tamaño específico, ej: 640x480
+# O a un tamaño específico, ej.: 640x480
 # referencia_resized = cv2.resize(imagen_referencia, (640, 480))
 # prueba_resized = cv2.resize(imagen_prueba, (640, 480))
 
